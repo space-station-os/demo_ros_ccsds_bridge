@@ -13,7 +13,7 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='demo_ros_ccsds_bridge',
-            executable='space_bridge',
+            executable='ground_receiver',
             name='ros2_ccsds_bridge',
             output='screen',
             emulate_tty=True,

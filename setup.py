@@ -10,7 +10,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + '/launch', ['launch/bridge.launch.py']),
+        ('share/' + package_name + '/launch', ['launch/bridge.launch.py', 'launch/ground_station.launch.py']),
         ('share/' + package_name + '/config', ['config/bridge.yaml']),
      
     ],
@@ -23,7 +23,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'ccsds_bridge = demo_ros_ccsds_bridge.ros2_ccsds_bridge:main',
+            'space_bridge = demo_ros_ccsds_bridge.space_station.encoder:main',
+            'ground_receiver = demo_ros_ccsds_bridge.ground.receiver:main',
         ],
     },
 )
