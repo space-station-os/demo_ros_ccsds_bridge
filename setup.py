@@ -14,7 +14,7 @@ setup(
         ('share/' + package_name + '/config', ['config/bridge.yaml']),
         ('share/' + package_name + '/starlink', ['starlink/starlink_relay.py']),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools','websockets','spacepackets'],
     zip_safe=True,
     maintainer='siddarth',
     maintainer_email='siddarth.dayasagar@gmail.com',
