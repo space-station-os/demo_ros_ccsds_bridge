@@ -24,3 +24,8 @@
   ros_type_name: "space_station_eclss/srv/RequestProductWater"
   packet_apid: 79
   communication_type: "TC"
+
+- ros_topic_name: "/gnc/pose_all"
+  ros_type_name: "geometry_msgs/msg/PoseStamped"
+  packet_apid: 45
+  communication_type: "TM"
